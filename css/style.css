@@ -35,17 +35,39 @@ body {
     margin: 10px;
 }
 
+.logos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sectionLogo {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 img.logo {
     width: 20%;
-    height: 20%;
 }
+
+img.logoMarca {
+    width: 10%;
+    padding-inline: 50px;
+}
+
 
 .container {
     display: flex;
     flex-direction: row;
     width: 100%;
     flex-grow: 1;
-    /* Permite que el contenedor ocupe el espacio restante */
+    margin-block: 3%;
 }
 
 .sectionfilter {
@@ -58,8 +80,8 @@ img.logo {
     text-align: center;
     color: whitesmoke;
     background-color: rgb(49, 52, 49);
-    margin-block: 3%;
-
+    border-end-end-radius: 20px;
+    border-start-end-radius: 20px;
 }
 
 .backgroundSneaker {
@@ -77,6 +99,7 @@ img.logo {
     width: 100%;
     margin: auto;
     overflow-y: auto;
+
 
 }
 
