@@ -1,0 +1,31 @@
+<?php
+require_once 'templates/layout/header.phtml';
+?>
+<section class="sectionfilter">
+    <h1>aca va a existir un filtro</h1>
+</section>
+
+<section class="sectionSneaker">
+    <div class="backgroundSneaker">
+        <ul class="ulSneaker">
+            <?php foreach ($sneakers as $sneaker): ?>
+                <li class="liSneaker">
+                    <div class="sneakerView">
+                        <?php if (!empty($sneaker->imagen)): ?>
+                            <img src="<?= htmlspecialchars($sneaker->imagen) ?>" alt="Imagen de la zapatilla" class="imgSneaker">
+                        <?php endif; ?>
+                        <b><?= htmlspecialchars($sneaker->nombre) ?></b>
+                        <b>$<?= htmlspecialchars($sneaker->precio) ?></b>
+                    </div>
+                    <div class="backgroundDetails">
+                        <a href="detallesnaker/<?= $sneaker->id ?>" type="button" class='butondetails'>Ver más detalle</a>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</section>
+
+<?php
+require_once 'templates/layout/footer.phtml';
+?>
