@@ -17,6 +17,10 @@ switch ($params[0]) {
         $controller = new SneakerController();
         $controller->showHome();
         break;
+    case 'detallesnaker':
+        $controller = new SneakerController();
+        $controller->showDetails($params[1]);
+        break;
     case 'showLogin':
         $controller = new AuthController();
         $controller->showLogin();

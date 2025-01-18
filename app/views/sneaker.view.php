@@ -6,4 +6,9 @@ class SneakerView
         $count = count($sneakers);
         require_once 'templates/home.phtml';
     }
+
+    public function viewDetails($sneaker)
+    {
+        require_once 'templates/detalles_sneaker.phtml';
+    }
 }

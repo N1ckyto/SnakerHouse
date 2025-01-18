@@ -1,0 +1,25 @@
+<?php require 'templates/layout/header.phtml';
+$sneakers = $sneaker; ?>
+
+<div>
+    <h1>Detalles de la Propiedad</h1>
+    <div>
+        <div>Información de la Propiedad</div>
+        <div>
+            <?php if (!empty($sneaker->imagen)): ?>
+                <img src="<?= htmlspecialchars($sneaker->imagen) ?>" alt="Imagen de la propiedad">
+            <?php endif; ?>
+            <div>
+                <h5><strong>Nombre:</strong> <?php echo htmlspecialchars($sneakers->nombre); ?></h5>
+                <p><strong>Marca:</strong> <?php echo htmlspecialchars($sneakers->id_marca); ?></p>
+                <p><strong>Precio: $</strong> <?php echo htmlspecialchars($sneakers->precio); ?></p>
+                <a href="propiedades">Volver a la lista de propiedades</a>
+                <!-- <?php if ($this->user && $this->user->user <> NULL): ?>
+                    <a href="agregar-modificarPropiedad">Seguir modificando propiedades</a>
+                <?php endif; ?> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php require 'templates/layout/footer.phtml'; ?>

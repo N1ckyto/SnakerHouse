@@ -78,9 +78,13 @@ form.formLogin {
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgb(49, 52, 49) opacity 0.8;
+    background-color: rgb(49, 52, 49) opacity;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 50);
+}
+
+form h3 {
+    text-shadow: 0 0 6px rgba(0, 0, 0, 80);
 }
 
 .video-background {
@@ -158,8 +162,6 @@ button {
     width: 100%;
     margin: auto;
     overflow-y: auto;
-
-
 }
 
 .ulSneaker {
