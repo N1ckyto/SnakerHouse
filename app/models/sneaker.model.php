@@ -18,7 +18,7 @@ class SneakerModel
     public function getDetails($id)
     {
         // Consulta para obtener los detalles de la propiedad y su propietario
-        $stmt = $this->db->prepare('SELECT p.nombre, p.precio, p.imagen, p.id_marca
+        $stmt = $this->db->prepare('SELECT p.nombre, p.precio, p.imagen, pr.marca
             FROM zapatilla p
             JOIN marca pr ON p.id_marca = pr.id
             WHERE p.id = :id');

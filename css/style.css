@@ -53,7 +53,7 @@ body {
 }
 
 img.logo {
-    width: 20%;
+    width: 75%;
 }
 
 img.logoMarca {
@@ -64,7 +64,7 @@ img.logoMarca {
 .container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     flex-grow: 1;
     margin-block: 3%;
@@ -242,4 +242,28 @@ footer {
 .socialmedia a {
     margin: 0 10px;
     display: inline-block;
+}
+
+.BackgroundDetails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(5, 5, 5, 0.3);
+    margin-left: 8%;
+}
+
+.imgDetails {
+    width: 430px;
+    height: 430px;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+.details {
+    margin-right: 10%;
+    width: 30%;
 }
