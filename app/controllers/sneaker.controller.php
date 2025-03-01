@@ -27,4 +27,9 @@ class SneakerController
         // Envía los detalles a la vista
         return $this->view->viewDetails($snakerDetails);
     }
+
+    public function showMarcas()
+    {
+        $this->view->ShowMarcas();
+    }
 }

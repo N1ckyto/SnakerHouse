@@ -10,7 +10,15 @@ $sneakers = $sneaker;
     <h5><?php echo htmlspecialchars($sneakers->nombre); ?></h5>
     <p><?php echo htmlspecialchars($sneakers->marca); ?></p>
     <p>$<?php echo htmlspecialchars($sneakers->precio); ?></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, sequi. Quae sapiente maxime quaerat ex iure? Dolorum, sit quo sed dicta quia eum molestiae ex? Nobis asperiores atque quas eius.</p>
+
+    <div>Talles disponibles:</div>
+    <section class="talles">
+        <?php for ($i = 0; $i < 10; $i++): ?>
+            <button class="talle"><?php echo $i + 35; ?></button>
+        <?php endfor; ?>
+    </section>
+
+    <button class="compra">Comprar</button>
     <!-- <?php if ($this->user && $this->user->user <> NULL): ?>
                     <a href="agregar-modificarPropiedad">Seguir modificando propiedades</a>
                 <?php endif; ?> -->

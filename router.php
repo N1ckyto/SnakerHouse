@@ -17,6 +17,10 @@ switch ($params[0]) {
         $controller = new SneakerController();
         $controller->showHome();
         break;
+    case 'marcas':
+        $controller = new SneakerController();
+        $controller->showMarcas();
+        break;
     case 'detallesnaker':
         $controller = new SneakerController();
         $controller->showDetails($params[1]);

@@ -11,4 +11,9 @@ class SneakerView
     {
         require_once 'templates/detalles_sneaker.phtml';
     }
+
+    public function ShowMarcas()
+    {
+        require_once 'templates/marcas.phtml';
+    }
 }
